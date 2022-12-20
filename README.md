@@ -9,6 +9,7 @@
 ## テスト環境
 * Ubuntu20.04
 
-## LICENCE
+## LICENSE
+* BSDライセンスが適用されております。詳しくはLICENSEをご参照下さい。
 
 ⓒ 2022 Taiki Fukuda
