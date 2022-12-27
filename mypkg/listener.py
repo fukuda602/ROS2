@@ -24,12 +24,10 @@ def main():
     rclpy.init()
     node = Node("listener")
     client = node.create_client(Query, 'query') 
-
     while not client.wait_for_service(timeout_sec=1.0):
         n += 1
-        node.get_logger().info("NOW LOWDING %d" % (n))
-        
-    
+        node.get_logger().info("NOW_LOWDING:%d" % (n))
+         
     req = Query.Request()
     req.you = "gu-"
     future = client.call_async(req) 
@@ -43,6 +41,7 @@ def main():
                 node.get_logger().info('error')
             else:
                 node.get_logger().info("cup: {}".format(response.cpu))
+            
             break
     
     node.destroy_node() 

@@ -9,9 +9,9 @@ from rclpy.node import Node
 from person_msgs.srv import Query
 
 y = ["pa-", "gu-" ,"choki"]
-
 result = random.choice(y)
 input("jyanken:")
+
 class Talker():
 #    def __init__(self, node):
 #        self.pub = node.create_publisher(Int16, "countup", 10)
@@ -36,11 +36,13 @@ class Talker():
 
         return response
 
-#def main():
+srv = node.create_service(Query, "query", cb)
+
+def main():
     rclpy.init()
     node = Node("talker")
 #    talker = Talker(node)
-    srv = node.create_service(Query, "query", cb)
+#    srv = node.create_service(Query, "query", cb)
     rclpy.spin(node)
 
 if __name__ == '__main__':
