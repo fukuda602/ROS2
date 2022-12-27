@@ -14,6 +14,14 @@ ros2 run mypkg talker
 ```
 ros2 run mypkg listener
 ```
+```
+[INFO] [1672160812.793019600] [listener]: Listen: 22
+[INFO] [1672160813.230284800] [listener]: Listen: 23
+[INFO] [1672160813.730327400] [listener]: Listen: 24
+[INFO] [1672160814.230059900] [listener]: Listen: 25
+[INFO] [1672160814.731179000] [listener]: Listen: 26
+```
+
 * 終了は【Ctrl + C】
 
 ## 必要ソフトフェア
