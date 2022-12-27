@@ -11,5 +11,4 @@ source $dir/.bashrc
 timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 
 cat /tmp/mypkg.log |
-#grep 'NOW_LOWDING:10'
-grep 'Listen: 10'
+grep 'NOW_LOWDING:10'
