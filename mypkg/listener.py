@@ -18,13 +18,19 @@
 import rclpy
 from rclpy.node import Node
 from person_msgs.srv import Query
+from std_msgs.msg import Int16
+
 
 def main():
+    n = 0
     rclpy.init()
     node = Node("listener")
     client = node.create_client(Query, 'query') 
-    while not client.wait_for_service(timeout_sec=1.0): 
-        node.get_logger().info('NOW LOWDING')
+
+    while not client.wait_for_service(timeout_sec=1.0):
+        n += 1
+        node.get_logger().info("NOW LOWDING %d" % (n))
+        
     
     req = Query.Request()
     req.you = "gu-"
