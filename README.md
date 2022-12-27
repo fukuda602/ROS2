@@ -1,4 +1,4 @@
-[![test](https://github.com/fukuda602/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/fukuda602/mypkg/actions/workflows/test.yml)
+[![test](https://github.com/fukuda602/mypkg/actions/workflows/test.yml/badge.svg?branch=dev)](https://github.com/fukuda602/mypkg/actions/workflows/test.yml)
 # mypkg
 * このリポジトリは千葉工業大学ロボットシステム学で使用したROS2のパッケージを管理しています。
 * cpuとじゃんけんを行うレポジトリ
