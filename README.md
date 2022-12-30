@@ -2,8 +2,8 @@
 # mypkg
 * このリポジトリは千葉工業大学ロボットシステム学で使用したROS2のパッケージを管理しています。
 
-## トピック
-* talker.pyからlistener.pyに1,2,3...nの数字を送ります。
+## ノードとトピック
+* talker.pyからlistener.pyに1,2,3...nの数字を送り、listener.pyで標準出力します。
 
 ## 実行例
 * 端末1
@@ -26,6 +26,9 @@ ros2 run mypkg listener
 
 ## 必要ソフトフェア
 * Python 3.7 ～ 3.10
+
+## ROS2バージョン
+* Foxy Fitzroy
 
 ## テスト環境
 * Ubuntu20.04
