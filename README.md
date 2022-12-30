@@ -6,7 +6,7 @@
 * 手元の端末では動作確認済み。　
 
 ## ノードとトピック
-* player1.pyからplayer2.pyにgu-, cyoki, pa- を送り、player2.pyが3つのうちどれかをランダムで返します。
+* player1.pyからplayer2.pyにgu-, cyoki, pa- のどれかを送り、player2.pyが3つのうちどれかをランダムで返します。
 
 ## 実行例
 * 端末1
