@@ -8,20 +8,22 @@ from rclpy.node import Node
 from std_msgs.msg import Int16
 from person_msgs.srv import Query
 
-y = ["pa-", "gu-" ,"choki"]
-result = random.choice(y)
-input("jyanken:")
+while True:
+    x = input("jyanken:")
+    if x != "pa-" and x != "cyoki" and x != "gu-":
+        print("error")
+        continue
+    break
 
 def cb(resquest, response):
+    y = ["pa-", "gu-" ,"cyoki"]
     result = random.choice(y)
     if resquest.you == "gu-":
         response.cpu = result
-    elif resquest.you == "choki":
+    elif resquest.you == "cyoki":
         response.cpu = result
     elif resquest.you == "pa-":
         response.cpu = result
-    else:
-        response.cpu = "error"
 
     return response
 

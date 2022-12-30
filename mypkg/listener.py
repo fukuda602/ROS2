@@ -25,9 +25,9 @@ def main():
             try:
                 response = future.result()
             except:
-                node.get_logger().info('error')
+                node.get_logger().info("error")
             else:
-                node.get_logger().info("cup: {}".format(response.cpu))
+                node.get_logger().info("cpu: {}".format(response.cpu))
 
             break
 
