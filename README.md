@@ -5,8 +5,8 @@
 * test.bashは問題ないが、Github Actionsでエラーが起こる状態です。
 * 手元の端末では動作確認済み。　
 
-## トピック
-* talker.pyからlistener.pyに gu-, choki, pa- を送り、listener.pyが3つのうちどれかを返します・
+## ノードとトピック
+* talker.pyからlistener.pyに gu-, choki, pa- を送り、listener.pyが3つのうちどれかを返します。
 
 ## 実行例
 * 端末1
