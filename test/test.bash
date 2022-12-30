@@ -8,7 +8,7 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
+timeout 10 ros2 launch mypkg play1_play2.launch.py > /tmp/mypkg.log
 
 cat /tmp/mypkg.log |
 grep 'NOW_LOWDING:10'

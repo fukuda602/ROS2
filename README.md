@@ -6,27 +6,30 @@
 * 手元の端末では動作確認済み。　
 
 ## ノードとトピック
-* talker.pyからlistener.pyにgu-, cyoki, pa- を送り、listener.pyが3つのうちどれかをランダムで返します。
+* player1.pyからplayer2.pyにgu-, cyoki, pa- を送り、player2.pyが3つのうちどれかをランダムで返します。
 
 ## 実行例
 * 端末1
 ```
-ros2 run mypkg talker
+ros2 run mypkg player1
 ```
 ```
 gu-
 ```
 * 端末2
 ```
-ros2 run mypkg listener
+ros2 run mypkg player2
 ```
 ```
-[INFO] [1672159993.350717100] [listener]: NOW_LOWDING:1
-[INFO] [1672159993.853434600] [listener]: NOW_LOWDING:2
-[INFO] [1672159994.356229000] [listener]: NOW_LOWDING:3
-[INFO] [1672159994.859236800] [listener]: NOW_LOWDING:4
-[INFO] [1672159995.361677000] [listener]: NOW_LOWDING:5
-[INFO] [1672159999.635887500] [listener]: cpu: cyoki
+[INFO] [1672405609.860622400] [player2]: NOW_LOWDING:1
+[INFO] [1672405610.362949300] [player2]: NOW_LOWDING:2
+[INFO] [1672405610.864893800] [player2]: NOW_LOWDING:3
+[INFO] [1672405611.367787400] [player2]: NOW_LOWDING:4
+[INFO] [1672405611.871026300] [player2]: NOW_LOWDING:5
+[INFO] [1672405612.373963700] [player2]: NOW_LOWDING:6
+[INFO] [1672405612.875814200] [player2]: NOW_LOWDING:7
+[INFO] [1672405613.378810900] [player2]: NOW_LOWDING:8
+[INFO] [1672405613.884225100] [player2]: cpu: pa-
 ```
 * 終了は【Ctrl + C】
 

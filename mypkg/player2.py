@@ -9,7 +9,7 @@ from person_msgs.srv import Query
 def main():
     n = 0
     rclpy.init()
-    node = Node("listener")
+    node = Node("player2")
     client = node.create_client(Query, 'query') 
     while not client.wait_for_service(timeout_sec=0.5):
         n += 1
