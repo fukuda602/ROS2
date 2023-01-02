@@ -10,5 +10,5 @@ colcon build
 source $dir/.bashrc
 timeout 10 ros2 launch mypkg play1_play2.launch.py > /tmp/mypkg.log
 
-cat /tmp/mypkg.log |
+cat /tmp/mypkg.log 
 grep 'NOW_LOWDING:5'
