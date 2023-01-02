@@ -21,11 +21,7 @@ ros2 run mypkg listener
 [INFO] [1672160814.230059900] [listener]: Listen: 25
 [INFO] [1672160814.731179000] [listener]: Listen: 26
 ```
-
 * 終了は【Ctrl + C】
-
-## 必要ソフトフェア
-* Python 3.7 ～ 3.10
 
 ## ROS2バージョン
 * Foxy Fitzroy
