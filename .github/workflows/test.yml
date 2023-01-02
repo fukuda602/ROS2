@@ -11,7 +11,8 @@ jobs:
           cd /root/ros2_ws/src/
           git clone https://github.com/fukuda602/person_msgs
           rsync -av ./ /root/ros2_ws/src/mypkg/
-          cd /root/mypkg/test
+          cd /
+          cd /root/ros2_ws/src/mypkg/test
           #rosdep update
           #rosdep install -i --from-path src --rosdistro humble -y
           bash -xv ./test.bash
