@@ -2,7 +2,7 @@ name: test
 on: push
 jobs:
 
-  pyhton version:
+  pyhton-version:
     runs-on: ubuntu-latest
     strategy:
       matrix:
