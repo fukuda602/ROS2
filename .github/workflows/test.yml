@@ -7,8 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: build and test
-        repository: /root/ros2_ws/src/person_msgs
         run: |
+          cd /root/ros2_ws/src/
+          repository: person_msgs
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           rosdep update
