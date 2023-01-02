@@ -13,4 +13,4 @@ jobs:
           rsync -av ./ /root/ros2_ws/src/mypkg/
           #rosdep update
           #rosdep install -i --from-path src --rosdistro humble -y
-          bash -xv ./mypkg/test/test.bash
+          bash -xv ./test/test.bash
