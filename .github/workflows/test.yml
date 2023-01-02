@@ -10,12 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: python test
-      run: |
-        rsync -av ./ /root/ros2_ws/src/mypkg/
-        cd /root/ros2_ws
-        rosdep update
-        rosdep install -i --from-path src --rosdistro humble -y
-        bash -xv ./src/mypkg/test/test.bash /root
+      run:  bash -xv ./test/test.bash
 
   test:
     runs-on: ubuntu-22.04
