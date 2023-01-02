@@ -12,5 +12,5 @@ jobs:
           cd /root/ros2_ws/src
           git clone https://github.com/fukuda602/person_msgs
           rosdep update
-          rosdep install -i --from-path src --rosdistro humble -y
-          bash -xv ./mypkg/test/test.bash
+          #rosdep install -i --from-path src --rosdistro humble -y
+          bash -xv ./mypkg/test/test.bash /root
