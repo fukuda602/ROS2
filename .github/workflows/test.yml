@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: python test
-      run: bash -xv ./test.bash 
+      run:  bash -xv ./src/mypkg/test/test.bash /root
 
   test:
     runs-on: ubuntu-22.04
