@@ -7,13 +7,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: build and test
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
           set +xv
           cd /root/ros2_ws/src
-          git clone https://github.com/fukuda602/person_msgs
+          git clone https://github.com/fukuda602/person_msgs ls/*
           #rosdep update
           #rosdep install -i --from-path src --rosdistro humble -y
           bash -xv ./mypkg/test/test.bash /root
